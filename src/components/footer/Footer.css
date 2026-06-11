@@ -1,0 +1,32 @@
+.simple-footer-div {
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  /* Dark mode background syncs with Main wrapper, but we can set it if needed. For now it inherits. */
+}
+
+.footer-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.footer-text a {
+  color: #5865F2; /* Subtle brand color or accent */
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.footer-text a:hover {
+  opacity: 0.8;
+}
+
+.dark-mode.footer-text {
+  color: #a0a0a0;
+}
+
+.dark-mode.footer-text a {
+  color: #ffffff;
+}

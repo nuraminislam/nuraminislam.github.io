@@ -1,0 +1,220 @@
+.cta-section {
+  width: 100%;
+  padding: 30px 0 0 0;
+  overflow: hidden;
+  position: relative;
+  /* Matching the dark premium look. If the user toggles light mode, the background relies on Main.js wrapper, but we can set specific styles if needed. */
+}
+
+.cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.cta-content {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.cta-title-first {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  color: #1a1a1a;
+  letter-spacing: -2px;
+}
+
+.dark-mode .cta-title-first {
+  color: #ffffff;
+}
+
+.cta-title-second {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1.1;
+  color: #888888;
+  letter-spacing: -2px;
+}
+
+.dark-mode .cta-title-second {
+  color: #555555;
+}
+
+.cta-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 30px auto 40px auto;
+  max-width: 600px;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.dark-mode .cta-subtitle {
+  color: #a0a0a0;
+}
+
+.cta-btn-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-btn-primary {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #1a1a1a;
+}
+
+.cta-btn-primary:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.dark-mode .cta-btn-primary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .cta-btn-primary:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.cta-btn-secondary {
+  background-color: transparent;
+  color: #1a1a1a;
+  padding: 15px 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(26,26,26,0.2);
+}
+
+.dark-mode .cta-btn-secondary {
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.cta-btn-secondary:hover {
+  background-color: rgba(26,26,26,0.05);
+}
+
+.dark-mode .cta-btn-secondary:hover {
+  background-color: rgba(255,255,255,0.05);
+}
+
+/* Fan Images Section */
+.cta-images-fan {
+  position: relative;
+  width: 100%;
+  height: 350px; /* Adjust based on image heights to allow them to overflow out the bottom if needed */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.cta-fan-card {
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  bottom: -40px; /* Let them sit lower */
+  transform-origin: bottom center;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-fan-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.dark-mode .cta-fan-card img {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+/* Fan placements */
+.fan-card-1 {
+  transform: translateX(-240px) rotate(-15deg);
+  z-index: 1;
+}
+
+.fan-card-2 {
+  transform: translateX(-80px) rotate(-5deg);
+  z-index: 2;
+}
+
+.fan-card-3 {
+  transform: translateX(80px) rotate(5deg);
+  z-index: 3;
+}
+
+.fan-card-4 {
+  transform: translateX(240px) rotate(15deg);
+  z-index: 4;
+}
+
+/* Hover effect on fan */
+.cta-images-fan:hover .fan-card-1 {
+  transform: translateX(-260px) rotate(-18deg) translateY(-10px);
+}
+.cta-images-fan:hover .fan-card-2 {
+  transform: translateX(-90px) rotate(-6deg) translateY(-20px);
+}
+.cta-images-fan:hover .fan-card-3 {
+  transform: translateX(90px) rotate(6deg) translateY(-20px);
+}
+.cta-images-fan:hover .fan-card-4 {
+  transform: translateX(260px) rotate(18deg) translateY(-10px);
+}
+
+@media (max-width: 1024px) {
+  .cta-fan-card {
+    width: 200px;
+    height: 260px;
+  }
+  .fan-card-1 { transform: translateX(-180px) rotate(-15deg); }
+  .fan-card-2 { transform: translateX(-60px) rotate(-5deg); }
+  .fan-card-3 { transform: translateX(60px) rotate(5deg); }
+  .fan-card-4 { transform: translateX(180px) rotate(15deg); }
+}
+
+@media (max-width: 768px) {
+  .cta-title-first, .cta-title-second {
+    font-size: 3rem;
+  }
+  .cta-fan-card {
+    width: 150px;
+    height: 200px;
+  }
+  .fan-card-1 { transform: translateX(-120px) rotate(-12deg); }
+  .fan-card-2 { transform: translateX(-40px) rotate(-4deg); }
+  .fan-card-3 { transform: translateX(40px) rotate(4deg); }
+  .fan-card-4 { transform: translateX(120px) rotate(12deg); }
+  
+  .cta-images-fan {
+    height: 220px;
+  }
+}

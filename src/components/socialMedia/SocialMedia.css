@@ -1,0 +1,110 @@
+/* Change colors in this file to style to your needs on a global level. 
+Certain colors are used for different and multiply types of elements. 
+For greater control over colors visit each components .scss file. */
+.social-media-div {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+}
+
+.icon-button i {
+  color: #ffffff;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.95rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  margin: 0 4px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1.9rem;
+  margin-bottom: 0;
+  text-decoration: none !important;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.facebook i {
+  background-color: #3b5998;
+}
+
+.linkedin i {
+  background-color: #0e76a8;
+}
+
+.github i {
+  background-color: #333;
+}
+
+.gitlab i {
+  background-color: #fca326;
+}
+
+.google i {
+  background-color: #ea4335;
+}
+
+.twitter i {
+  background-color: #1da1f2;
+}
+
+.medium i {
+  background-color: #000;
+}
+
+.stack-overflow i {
+  background-color: #f48024;
+}
+
+.kaggle i {
+  background-color: #20beff;
+}
+
+.instagram i {
+  background-color: #c13584;
+}
+
+.whatsapp i {
+  background-color: #25d366;
+}
+
+.discord i {
+  background-color: #5865f2;
+}
+
+/* Hover Transition */
+.twitter i:hover,
+.google i:hover,
+.gitlab i:hover,
+.github i:hover,
+.linkedin i:hover,
+.facebook i:hover,
+.instagram i:hover,
+.whatsapp i:hover,
+.discord i:hover,
+.stack-overflow i:hover,
+.kaggle i:hover,
+.medium i:hover {
+  background-color: #000000;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .social-media-div {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=SocialMedia.css.map */

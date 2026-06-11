@@ -1,0 +1,116 @@
+/* Change colors in this file to style to your needs on a global level. 
+Certain colors are used for different and multiply types of elements. 
+For greater control over colors visit each components .scss file. */
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: 250px;
+}
+
+.card-title {
+  color: #000000;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.card-subtitle {
+  color: #666666;
+  font-size: 17px;
+  line-height: 1.5rem;
+}
+
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(211, 211, 211, 0.397);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-card-light {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.project-card-dark {
+  -webkit-box-shadow: 0px 10px 30px -15px #d9dbdf;
+          box-shadow: 0px 10px 30px -15px #d9dbdf;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.project-detail {
+  text-align: center;
+}
+
+.project-card-light:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+}
+
+.project-card-dark:hover {
+  -webkit-box-shadow: 0px 20px 30px -10px #d9dbdf;
+          box-shadow: 0px 20px 30px -10px #d9dbdf;
+}
+
+.project-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.project-card-footer span.project-tag {
+  background: #55198b;
+  color: #f5f2f4;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  white-space: nowrap;
+  line-height: 1.5;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0 0.75em;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  .project-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=StartupProjects.css.map */

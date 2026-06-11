@@ -1,0 +1,232 @@
+.process-main-title {
+  font-size: 8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  color: #000000;
+  letter-spacing: -2px;
+}
+
+.dark-mode.process-main-title {
+  color: #ffffff;
+}
+
+.process-layout-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  padding: 40px;
+}
+
+/* Crosshair Background Lines */
+.crosshair-vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #e0e0e0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.dark-mode.crosshair-vertical {
+  background-color: #333333;
+}
+
+.crosshair-horizontal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background-color: #e0e0e0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.dark-mode.crosshair-horizontal {
+  background-color: #333333;
+}
+
+/* Central Image overlap */
+.process-center-image-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.dark-mode.process-center-image-wrapper {
+  background: #1e2433;
+  border-color: #333333;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.process-center-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* 2x2 Grid Layout */
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+  z-index: 5;
+}
+
+.process-quadrant {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Quadrant Specific Alignments to match screenshot */
+.quadrant-1 {
+  align-items: flex-start;
+  text-align: left;
+}
+.quadrant-2 {
+  align-items: flex-end;
+  text-align: right;
+}
+.quadrant-3 {
+  align-items: flex-start;
+  text-align: left;
+}
+.quadrant-4 {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.process-content-box {
+  max-width: 350px;
+}
+
+/* Typography for the Steps */
+.process-step-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.dark-mode.process-step-title {
+  color: #ffffff;
+}
+
+.process-step-id {
+  font-weight: 800;
+}
+
+.process-step-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 30px;
+}
+
+.dark-mode.process-step-desc {
+  color: #a0a0a0;
+}
+
+/* "LETS TALK" Pill Button */
+.process-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 25px 8px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 40px;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.dark-mode.process-button {
+  border-color: #4b5563;
+}
+
+.process-button:hover {
+  background: #f9fafb;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.dark-mode.process-button:hover {
+  background: #1f2937;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.process-button-icon {
+  width: 35px;
+  height: 35px;
+  background-color: #bbf7d0; /* Neon green matching the screenshot */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.process-button-icon i {
+  color: #166534; /* Dark green icon */
+  font-size: 0.9rem;
+  transform: rotate(-45deg); /* Arrow pointing top-right if needed, or straight right */
+}
+
+/* Force standard right arrow for LETS TALK */
+.process-button-icon i.fa-arrow-right {
+  transform: none; 
+}
+
+.process-button span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111827;
+}
+
+.dark-mode.process-button span {
+  color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .process-main-title {
+    font-size: 4rem;
+  }
+  
+  .crosshair-vertical, 
+  .crosshair-horizontal,
+  .process-center-image-wrapper {
+    display: none; /* Hide complex grid graphics on small screens */
+  }
+  
+  .process-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+  
+  .process-quadrant {
+    padding: 20px;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Agustina Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agustina Regular"),
+    url("./assets/fonts/Agustina.woff") format("woff");
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: #FAFAFA;
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button, input, .nav-link, .btn, .subTitle {
+  font-family: "Poppins", sans-serif;
+}
+/* Media Query */
+@media (max-width: 1380px) {
+  html,
+  body {
+    font-size: rem;
+    line-height: normal;
+  }
+}
+
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    padding: 0 50px;
+  }
+}

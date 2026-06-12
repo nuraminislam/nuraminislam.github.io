@@ -39,12 +39,12 @@ input {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background: linear-gradient(to right, #004d40, #00e676);
 }
 
 input:focus + .slider {
-  -webkit-box-shadow: #2196f3;
-          box-shadow: #2196f3;
+  -webkit-box-shadow: 0 0 5px #00e676;
+          box-shadow: 0 0 5px #00e676;
 }
 
 input:checked + .slider::before {

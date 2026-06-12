@@ -349,6 +349,83 @@ const megaFooterInfo = {
   developerText: "Designed & Developed by Web Makeer"
 };
 
+const techStackGrid = {
+  display: true,
+  title: "TECHNICAL STACK",
+  subtitle: "Technologies I Work With",
+  description: "Full-stack expertise across modern development, AI, and cloud infrastructure.",
+  cards: [
+    {
+      title: "Frontend Development",
+      tags: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
+    },
+    {
+      title: "Backend Development",
+      tags: ["Node.js", "Express.js", "Java", "Python", "REST APIs", "JWT Auth", "MySQL", "MongoDB"]
+    },
+    {
+      title: "AI & Machine Learning",
+      tags: ["Machine Learning", "NLP", "Generative AI", "LLMs", "Computer Vision", "Prompt Engineering"]
+    },
+    {
+      title: "Tools & Cloud",
+      tags: ["Git", "GitHub", "Docker", "Postman", "Linux", "CI/CD", "AWS", "Figma"]
+    }
+  ]
+};
+
+const featuredWork = {
+  display: true,
+  title: "Featured Work",
+  subtitle: "Projects That Define My",
+  highlight: "Journey",
+  description: "A curated portfolio of production-grade platforms, full-stack microservices, and AI models built for scale and speed.",
+  projects: [
+    {
+      category: "AI • NLP • LLM",
+      title: "PolicyGuard AI",
+      desc: "An AI-powered policy analysis platform that processes documents, extracts risk models, and provides intelligent pipeline Q&A using LLMs.",
+      tags: ["React", "Python", "LLMs", "NLP"],
+      link: "#"
+    },
+    {
+      category: "PERFORMANCE • FINANCE",
+      title: "Virtualized Financial Grid",
+      desc: "High-Performance financial grid rendering 1,000,000 rows with custom manual virtualization, built for sub-millisecond updates.",
+      tags: ["React", "Vite", "Vanilla CSS", "Nginx"],
+      link: "#"
+    },
+    {
+      category: "SAAS • SECURITY • ISOLATION",
+      title: "Multi-Tenant SaaS Platform",
+      desc: "Scalable multi-tenant architecture with robust JWT authentication, fine-grained role-based access control (RBAC), and tenant isolation.",
+      tags: ["Node.js", "JWT", "Docker", "PostgreSQL"],
+      link: "#"
+    },
+    {
+      category: "REAL-TIME • WEBRTC",
+      title: "WebRTC Video Chat App",
+      desc: "Low-latency video streaming and real-time chat application implementing fully localized signaling loops over Next.js.",
+      tags: ["Next.js", "TypeScript", "WebRTC", "Socket.io"],
+      link: "#"
+    },
+    {
+      category: "BACKEND ARCHITECTURE",
+      title: "Distributed URL Shortener",
+      desc: "A highly available and scalable distributed URL shortener designed to resolve path transformations with minimum latency.",
+      tags: ["JavaScript", "Redis", "Scalable", "Express"],
+      link: "#"
+    },
+    {
+      category: "FULL STACK • MICROSERVICES",
+      title: "Payment Gateway System",
+      desc: "Secure core UPI and card payment gateway framework engine equipped with robust ACID transaction state-machine management.",
+      tags: ["Node.js", "React", "Docker", "PostgreSQL"],
+      link: "#"
+    }
+  ]
+};
+
 export {
   illustration,
   greeting,
@@ -364,5 +441,7 @@ export {
   journeyInfo,
   processInfo,
   contactCTAInfo,
-  megaFooterInfo
+  megaFooterInfo,
+  techStackGrid,
+  featuredWork
 };

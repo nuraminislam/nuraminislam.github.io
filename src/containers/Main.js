@@ -9,7 +9,8 @@ import Process from "./process/Process";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import CallToAction from "./callToAction/CallToAction";
-
+import TechStackGrid from "./techStackGrid/TechStackGrid";
+import FeaturedWork from "./featuredWork/FeaturedWork";
 
 import Footer from "../components/footer/Footer";
 
@@ -60,6 +61,8 @@ const Main = () => {
             <StackProgress />
             <Journey />
             <WorkExperience />
+            <TechStackGrid />
+            <FeaturedWork />
             <Process />
             <Projects />
             <StartupProject />

@@ -6,6 +6,7 @@ import StackProgress from "./skillProgress/skillProgress";
 import Journey from "./journey/Journey";
 import WorkExperience from "./workExperience/WorkExperience";
 import Process from "./process/Process";
+import Clients from "./clients/Clients";
 import Projects from "./projects/Projects";
 import StartupProject from "./StartupProjects/StartupProject";
 import CallToAction from "./callToAction/CallToAction";
@@ -64,6 +65,7 @@ const Main = () => {
             <TechStackGrid />
             <FeaturedWork />
             <Process />
+            <Clients />
             <Projects />
             <StartupProject />
             <CallToAction />

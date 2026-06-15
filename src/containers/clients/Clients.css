@@ -1,0 +1,128 @@
+.clients-section {
+  padding-top: 0;
+  margin-top: -40px;
+  padding-bottom: 100px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%); /* To break out of any container and span full width */
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.clients-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.clients-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+}
+
+.clients-subtitle {
+  font-size: 16px;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Dark mode overrides for header */
+.dark-mode.clients-heading {
+  color: #ffffff;
+}
+
+.dark-mode.clients-subtitle {
+  color: #a0a0a0;
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+}
+
+.clients-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  /* By default, scrolling left */
+  animation: scroll-left 40s linear infinite;
+  /* Ensure it does NOT pause on hover */
+  animation-play-state: running !important;
+}
+
+.clients-track.row-1 {
+  animation-duration: 35s;
+}
+
+.clients-track.row-2 {
+  /* Scroll right */
+  animation: scroll-right 45s linear infinite;
+}
+
+.clients-track.row-3 {
+  animation-duration: 40s;
+}
+
+.clients-track.row-4 {
+  animation: scroll-right 38s linear infinite;
+}
+
+.clients-track.row-5 {
+  animation-duration: 42s;
+}
+
+/* We have 4 copies, so 1 copy is 25%. We translate by 25% to loop seamlessly. */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-25%); }
+  100% { transform: translateX(0); }
+}
+
+.client-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  min-width: max-content;
+  transition: border-color 0.3s ease;
+}
+
+.client-pill i {
+  font-size: 20px;
+  color: #666666;
+}
+
+/* Dark mode styling */
+.dark-mode.client-pill {
+  background-color: transparent;
+  border: 1px solid #333333;
+  color: #e0e0e0;
+}
+
+.dark-mode.client-pill i {
+  color: #aaaaaa;
+}

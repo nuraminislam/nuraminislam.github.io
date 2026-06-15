@@ -426,6 +426,42 @@ const featuredWork = {
   ]
 };
 
+const clientsInfo = {
+  display: true,
+  clients: [
+    { name: "Lendorse", icon: "fas fa-leaf" },
+    { name: "Tempo Music School", icon: "fas fa-music" },
+    { name: "Araglen House", icon: "fas fa-home" },
+    { name: "IQ Branding Solutions", icon: "fas fa-bolt" },
+    { name: "THE FAMILY EDIT", icon: "fas fa-users" },
+    { name: "Pro Cast Angling", icon: "fas fa-fish" },
+    { name: "Zahir Kebab", icon: "fas fa-utensils" },
+    { name: "Arbor Dog Daycare", icon: "fas fa-dog" },
+    { name: "Positive Attitude Aviation", icon: "fas fa-plane" },
+    { name: "Jim Katz Family Law", icon: "fas fa-gavel" },
+    { name: "Able Tool", icon: "fas fa-wrench" },
+    { name: "Rivore", icon: "fas fa-gem" },
+    { name: "Instasd", icon: "fas fa-camera" },
+    { name: "Pro Roofers Galway", icon: "fas fa-hammer" },
+    { name: "The Aristocrats", icon: "fas fa-crown" },
+    { name: "VPS Web Server", icon: "fas fa-server" },
+    { name: "Hostinger", icon: "fas fa-server" },
+    { name: "Notion", icon: "fas fa-book" },
+    { name: "Aquaholic Tourist Caravan", icon: "fas fa-caravan" },
+    { name: "Miriam Simon", icon: "fas fa-user" },
+    { name: "Book Extraordinary", icon: "fas fa-book-open" },
+    { name: "Evisas", icon: "fas fa-passport" },
+    { name: "Flexfumes", icon: "fas fa-wind" },
+    { name: "Office Suites", icon: "fas fa-building" },
+    { name: "Bigstyle", icon: "fas fa-tshirt" },
+    { name: "Dampmaster", icon: "fas fa-tint" },
+    { name: "The Napco", icon: "fas fa-box" },
+    { name: "Filament", icon: "fas fa-lightbulb" },
+    { name: "MMK Electricians", icon: "fas fa-plug" },
+    { name: "FMCO", icon: "fas fa-briefcase" }
+  ]
+};
+
 export {
   illustration,
   greeting,
@@ -443,5 +479,6 @@ export {
   contactCTAInfo,
   megaFooterInfo,
   techStackGrid,
-  featuredWork
+  featuredWork,
+  clientsInfo
 };
